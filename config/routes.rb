@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   resource :sessions, only: [:new, :create, :destroy]
+  post '/login', to: 'sessions#create'
   root "sessions#new"
 end
