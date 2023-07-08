@@ -1,0 +1,42 @@
+<%# main div %>
+<div class="main-div">
+    
+    <%# div of icon %>
+    <div class='left-container'>
+
+        <div class='email-image-container'>
+            <%= image_tag('mail-icon.png') %>
+        </div>
+        
+        <div class='email-text-container'>
+            <h4>Welcome to <br> My Blog</h4>
+        </div>
+
+    </div>
+
+    <%# div of login %>
+    <form class='right-container' action='/login' method="post">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        
+        <%# email %>
+        <div class='email-container'>
+            <input type="text" id="email" name="email" required placeholder='Email'>
+        </div>
+        
+        <%# password %>
+        <div class='password-container'>
+            <input type="text" id="password" name="password" required placeholder='Password'>
+        </div>
+        
+        <%# login button %>
+        <div class='button-container'>
+            <input type="submit" value="Ingresar">
+        </div>
+        
+        <%# reset password %>
+        <div class='reset-container'>
+            <a href="">¿olvidaste tu contraseña?</a>
+        </div>
+
+    </form>
+</div>
