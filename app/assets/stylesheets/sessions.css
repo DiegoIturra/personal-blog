@@ -15,9 +15,76 @@ html, body {
 
 /*All right container properties*/
 .right-container{
-  background-color: brown;
-  height: 350px;
-  width: 400px;
+  background-color: #BDC3C7;
+  height: 250px;
+  width: 450px;
+  border-radius: 10px;
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(3, 0.5);
+}
+
+.email-container{
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-container > input{
+  border-radius: 5px;
+  border-style: none;
+  height: 30px;
+  width: 80%;
+}
+
+.password-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-container > input{
+  border-radius: 5px;
+  border-style: none;
+  height: 30px;
+  width: 80%;
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container > input{
+  border-radius: 5px;
+  border-style: none;
+  height: 30px;
+  width: 80%;
+  color: #fff;
+  background-color: #1ABC9C;
+  cursor: pointer;
+}
+
+.button-container > input:hover{
+  background-color: #16A085;
+}
+
+.reset-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-container > a{
+  size: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.reset-container > a:hover{
+  color: #16A085;
 }
 
 /*All left container properties*/
