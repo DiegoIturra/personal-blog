@@ -15,7 +15,7 @@ html, body {
 
 /*All right container properties*/
 .right-container{
-  background-color: #BDC3C7;
+  background-color: #ECF0F1;
   height: 250px;
   width: 450px;
   border-radius: 10px;
@@ -38,6 +38,15 @@ html, body {
   width: 80%;
 }
 
+.email-container > input:focus {
+  outline-color: #1ABC9C;
+}
+
+.email-container > input::placeholder{
+  color: #BDC3C7;
+  padding-left: 10px;
+}
+
 .password-container{
   display: flex;
   align-items: center;
@@ -49,6 +58,15 @@ html, body {
   border-style: none;
   height: 30px;
   width: 80%;
+}
+
+.password-container > input:focus {
+  outline-color: #1ABC9C;
+}
+
+.password-container > input::placeholder{
+  color: #BDC3C7;
+  padding-left: 10px;
 }
 
 .button-container{
@@ -79,7 +97,7 @@ html, body {
 
 .reset-container > a{
   size: 8px;
-  color: #fff;
+  color: #BDC3C7;
   text-decoration: none;
 }
 
@@ -118,4 +136,5 @@ html, body {
 
 .email-text-container > h4{
   line-height: 1.5;
+  color: #fff;
 }
