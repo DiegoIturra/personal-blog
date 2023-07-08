@@ -1,0 +1,54 @@
+html, body {
+  background-color: #1ABC9C;
+  height: 100%;
+  margin: 0;
+} 
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+/*All right container properties*/
+.right-container{
+  background-color: brown;
+  height: 350px;
+  width: 400px;
+}
+
+/*All left container properties*/
+.left-container{
+  height: 350px;
+  width: 400px;
+  position: relative;
+}
+
+.email-image-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-image-container > img{
+  max-height: 150px;
+  max-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-text-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-text-container > h4{
+  line-height: 1.5;
+}
